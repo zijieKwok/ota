@@ -42,7 +42,7 @@ jobs:
         rm -rf ./pass
         
         
-        cp -rf luci-app-passwall/po/zh_Hans luci-app-passwall/root/www/luci-static/passwall/flags/
+        cp -rf luci-app-passwall/po/zh_Hans luci-app-gpsysupgrade/po/
 
     - name: Apply
       run: |
