@@ -3,10 +3,10 @@
 
 # 界面
 
-![screenshots](https://github.com/zijieKwok/ota/png/view-1.png)
+![screenshots](https://github.com/zijieKwok/ota/tree/main/png/view-1.png)
 
-![screenshots](https://github.com/zijieKwok/ota/png/view-2.png)
+![screenshots](https://github.com/zijieKwok/ota/tree/main/png/view-2.png)
 
-![screenshots](https://github.com/zijieKwok/ota/png/view-3.png)
+![screenshots](https://github.com/zijieKwok/ota/tree/main/png/view-3.png)
 
-![screenshots](https://github.com/zijieKwok/ota/png/view-4.png)
+![screenshots](https://github.com/zijieKwok/ota/tree/main/png/view-4.png)
