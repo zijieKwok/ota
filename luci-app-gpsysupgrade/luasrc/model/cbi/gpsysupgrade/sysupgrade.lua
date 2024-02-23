@@ -8,7 +8,7 @@ local api = require "luci.model.cbi.gpsysupgrade.api"
 local Variable1 = "zijieKwok"
 local Variable2 = "OpenWrt"
 local Variable3 = "x86_64"
-local Variable4 = "5.15"
+local Variable4 = "v23.05.2"
 
 function get_system_version()
 	local system_version = luci.sys.exec("[ -f '/etc/openwrt_version' ] && echo -n `cat /etc/openwrt_version` | tr -d '\n'")
@@ -38,9 +38,9 @@ function to_check()
 	if model == "x86_64" then
 		check_update()
 		if fs.access("/sys/firmware/efi") then
-			download_url = "https://ghproxy.com/https://github.com/" ..Variable1.. "/" ..Variable2.. "/releases/download/" ..Variable3.. "_" ..Variable4.. "/" ..dateyr.. "-" ..Variable4.. "-openwrt-x86-64-generic-squashfs-combined-efi.img.gz"
+			download_url = "https://github.com/" ..Variable1.. "/" ..Variable2.. "/releases/download/" ..Variable3.. "_" ..Variable4.. "_" ..dateyr.. "_" ..Variable4.. "openwrt-x86-64-generic-squashfs-combined-efi.img.gz"
 		else
-			download_url = "https://ghproxy.com/https://github.com/" ..Variable1.. "/" ..Variable2.. "/releases/download/" ..Variable3.. "_" ..Variable4.. "/" ..dateyr.. "-" ..Variable4.. "-openwrt-x86-64-generic-squashfs-combined-efi.img.gz"
+			download_url = "https://github.com/" ..Variable1.. "/" ..Variable2.. "/releases/download/" ..Variable3.. "_" ..Variable4.. "_" ..dateyr.. "_" ..Variable4.. "openwrt-x86-64-generic-squashfs-combined-efi.img.gz"
 		end
 	else
 		local needs_update = false
